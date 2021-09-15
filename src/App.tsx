@@ -5,6 +5,10 @@ interface IApp {
   age: number;
 }
 
+export function sum(a: number, b: number) {
+  return a + b;
+}
+
 const obj: IApp = {
   name: 'russdfdfsdf111111sdfdf123123dsl11an',
   age: 15,
