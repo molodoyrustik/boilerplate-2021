@@ -6,14 +6,15 @@ interface IApp {
 }
 
 const obj: IApp = {
-  name: 'russdfdfsdf111111sdfdfdsl11an',
+  name: 'russdfdfsdf111111sdfdf123123dsl11an',
   age: 15,
 };
-console.log(obj);
+
 const App = (): JSX.Element => {
   return (
     <div>
       {obj.age}
+
       <h2>Welcome to React App</h2>
       <h3>Date : {new Date().toDateString()}</h3>
     </div>

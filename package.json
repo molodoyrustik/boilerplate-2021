@@ -6,9 +6,10 @@
   "scripts": {
     "start": "npx webpack serve --mode development",
     "build": "npx webpack --mode production",
-    "prettier": "npx prettier --write",
+    "prettier": "npx prettier --check",
+    "prettier:write": "npx prettier --write",
     "eslint": "npx eslint",
-    "eslint:write": "npx eslint --fix ./src",
+    "eslint:write": "npx eslint --fix",
     "prepare": "husky install"
   },
   "author": "",
@@ -54,6 +55,6 @@
     "react-dom": "^17.0.2"
   },
   "lint-staged": {
-    "*.ts, *.tsx": ["npm run prettier", "npm run eslint"]
+    "src/**/*.{js,ts,jsx,tsx}": ["npm run prettier:write", "npm run eslint:write"]
   }
 }
