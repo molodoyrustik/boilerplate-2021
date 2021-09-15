@@ -6,7 +6,7 @@ interface IApp {
 }
 
 const obj: IApp = {
-  name: 'russdfdfsdf111111sdfdfdslan',
+  name: 'russdfdfsdf111111sdfdfdsl11an',
   age: 15,
 };
 console.log(obj);
