@@ -55,6 +55,9 @@
     "react-dom": "^17.0.2"
   },
   "lint-staged": {
-    "src/**/*.{js,ts,jsx,tsx}": ["npm run prettier:write", "npm run eslint:write"]
+    "src/**/*.{js,ts,jsx,tsx}": [
+      "npm run prettier:write",
+      "npm run eslint:write"
+    ]
   }
 }
