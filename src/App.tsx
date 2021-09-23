@@ -1,25 +1,12 @@
 import React from 'react';
-
-interface IApp {
-  name: string;
-  age: number;
-}
-
-export function sum(a: number, b: number) {
-  return a + b;
-}
-
-const obj: IApp = {
-  name: 'russdfdfsdf111111sdfdf123123dsl11an',
-  age: 15,
-};
+import Header from './Header';
+import Footer from './Footer';
 
 const App = (): JSX.Element => {
   return (
     <div>
-      {obj.age}
-      <h2>Welcome to React App</h2>
-      <h3>Date : {new Date().toDateString()}</h3>
+      <Header />
+      <Footer />
     </div>
   );
 };
