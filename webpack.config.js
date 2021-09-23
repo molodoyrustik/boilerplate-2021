@@ -121,6 +121,10 @@ const productionConfig = {
   optimization: {
     minimize: true,
     minimizer: [new TerserPlugin(), new CssMinimizerPlugin()],
+    splitChunks: {
+      chunks: 'all',
+      name: false
+    },
   },
 };
 
