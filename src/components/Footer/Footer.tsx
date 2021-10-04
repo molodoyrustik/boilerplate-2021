@@ -1,6 +1,10 @@
 import React from 'react';
-import Styles from './Footer.module.css';
+import styled from '@emotion/styled';
+const FooterWrapper = styled.footer`
+  height: 100px;
+  background-color: red;
+`;
 
 export const Footer = (): JSX.Element => {
-  return <div className={Styles.main}>Footer</div>;
+  return <FooterWrapper>Footer</FooterWrapper>;
 };

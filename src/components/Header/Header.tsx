@@ -1,6 +1,10 @@
 import React from 'react';
-import Styles from './Header.module.css';
+import styled from '@emotion/styled';
+const HeaderWrapper = styled.header`
+  height: 100px;
+  background: blue;
+`;
 
 export const Header = (): JSX.Element => {
-  return <div className={Styles.main}>Header</div>;
+  return <HeaderWrapper>Header</HeaderWrapper>;
 };
