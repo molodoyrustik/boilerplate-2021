@@ -25,6 +25,11 @@ const commonConfig = {
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
+    alias: {
+      components: path.resolve(__dirname, 'src/components'),
+      types: path.resolve(__dirname, "src/types"),
+      modules: path.resolve(__dirname, "src/modules"),
+    },
   },
   plugins: [
     new ESLintPlugin(config),
@@ -58,7 +63,7 @@ const developmentConfig = {
   devtool: 'inline-source-map',
   devServer: {
     compress: true,
-    port: 9000,
+    port: 3000,
   },
   module: {
     rules: [

@@ -25,7 +25,21 @@
     "semi": "warn",
     "react/jsx-indent": ["error", 2],
     "max-len": [2, 120, 2],
-    "no-console": "error",
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "ExportDefaultDeclaration",
+        "message": "Restricted default export, prefer named exports!"
+      }
+    ],
+    "no-console": [
+      "error",
+      { "allow": [
+          "warn",
+          "error"
+        ]
+      }
+    ],
     "jsx-a11y/label-has-associated-control": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
     "react/no-set-state": "off",
@@ -43,5 +57,15 @@
         "extensions": [".js", ".jsx", ".ts", ".tsx", ".json"]
       }
     }
-  }
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.d.ts"
+      ],
+      "rules": {
+        "no-restricted-syntax": ["off"]
+      }
+    }
+  ]
 }
